@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../dist/etpl.min.js"></script>
+</head>
+<body>
+  <div id="tmpdiv">
+
+  </div>
+  <script type="text/template" id="tmp">
+    <ul>
+      <% list.forEach((val,index)=>{ %>
+        <li class="li-<%= index %>"><%= val %></li>
+      <% }) %>
+    </ul>
+  </script>
+
+  <script>
+    document.getElementById
+    var $ = (str)=>document.querySelector(str);
+    var tpl = etpl($("#tmp").innerHTML);
+    console.log(tpl);
+    $("#tmpdiv").innerHTML = tpl({list:[1,2,3]})
+  </script>
+</body>
+</html>

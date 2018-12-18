@@ -1,0 +1,30 @@
+{
+  "name": "etpl.js",
+  "version": "1.0.0",
+  "description": "基于ejs语法的简单模板",
+  "main": "dist/etpl.cjs.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fan19900404/ETpl.js.git"
+  },
+  "keywords": [],
+  "author": "ZF",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fan19900404/ETpl.js/issues"
+  },
+  "homepage": "https://github.com/fan19900404/ETpl.js#readme",
+  "devDependencies": {
+    "rollup": "^0.68.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-typescript": "^1.0.0",
+    "rollup-plugin-uglify": "^6.0.0",
+    "tslint": "^5.11.0",
+    "typescript": "^3.2.2"
+  },
+  "module": "dist/etpl.es.js",
+  "typings": "types/index.d.ts"
+}
