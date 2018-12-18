@@ -4,6 +4,12 @@
 ## 兼容
 * IE8+
 
+## 提供引入方法
+* `dist/etpl.min.js` 普通浏览器js引入
+* `dist/etpl.umd.js` 浏览器umd引入方式
+* `dist/etpl.cjs.js` node引入方式
+* `dist/etpl.es.js`  ES6模块引入方式
+
 ## 基本用法
 
 在html中引入js

@@ -85,28 +85,31 @@ export default [{
       })
     ]
   },
-  // {
-  //   input: 'src/index.js',
-  //   output: {
-  //     file: 'dist/check.umd.js',
-  //     // format: 'es',
-  //     format: 'umd',
-  //     name: 'check',
-  //     sourcemap: true,
-  //     exports: 'named',
-  //   },
-  //   plugins: [
-  //     resolve(),
-  //     babel({
-  //       exclude: 'node_modules/**', // 只编译我们的源代码
-  //     }),
-  //     uglify({
-  //       output: {
-  //         preamble: banner,
-  //       },
-  //       // 为了兼容IE8
-  //       ie8: true,
-  //     }),
-  //   ],
-  // },
+  {
+    input: 'src/index.ts',
+    output: {
+      file: 'dist/etpl.umd.js',
+      // format: 'es',
+      format: 'umd',
+      name: 'etpl',
+      sourcemap: true,
+      exports: 'named',
+    },
+    plugins: [
+      resolve(),
+      rollupTypescript({
+        lib: ["es5", "es6", "dom"],
+        target: "ES3",
+        removeComments:true,
+        declaration: true,
+      }),
+      uglify({
+        output: {
+          preamble: banner,
+        },
+        // 为了兼容IE8
+        ie8: true,
+      }),
+    ],
+  },
 ];
