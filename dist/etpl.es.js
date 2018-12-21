@@ -44,7 +44,6 @@ const etpl = (function () {
                 "return __p;\n";
         try {
             var render = new Function("obj", source);
-            console.log(render);
         }
         catch (e) {
             e.source = source;

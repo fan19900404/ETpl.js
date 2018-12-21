@@ -65,7 +65,6 @@ const etpl = (function() {
 
     try {
       var render = new Function("obj", source);
-      console.log(render)
     } catch (e) {
       e.source = source;
       throw e;
