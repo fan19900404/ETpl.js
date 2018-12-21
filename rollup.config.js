@@ -7,12 +7,14 @@ import rollupTypescript from 'rollup-plugin-typescript';
 import {
   name,
   version,
-  author
+  author,
+  homepage
 } from './package.json';
 
 const banner = `
 /*!
 * ${name} v${version}
+* github:${homepage}
 * (c) 2018-${new Date().getFullYear()} ${author}
 * Released under the MIT License.
 */

@@ -1,6 +1,6 @@
 {
   "name": "etpl.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "基于ejs语法的简单模板",
   "main": "dist/etpl.cjs.js",
   "scripts": {
